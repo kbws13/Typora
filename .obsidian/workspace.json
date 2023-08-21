@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "bcc3b67e10697643",
+    "type": "split",
+    "children": [
+      {
+        "id": "c07e5994257f3ebb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "313971cd4d4888cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/SpringBoot/常用依赖.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "74187b390e0509d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "f034f20d565576ad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "caef4d8c3cfbff27",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse"
+              }
+            }
+          },
+          {
+            "id": "6b853752d6b34ff2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f2e8872ea82efce6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 234.5
+  },
+  "right": {
+    "id": "1b0765f9ba73334b",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6e8ee8acfbdc596",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4174c8bd319aaefd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Java/SpringBoot/常用依赖.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f9b1a9f51b0b14ca",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Java/SpringBoot/常用依赖.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "31bb456c4f48fa67",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d85db81d4deab9e8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Java/SpringBoot/常用依赖.md"
+              }
+            }
+          },
+          {
+            "id": "bf7c06637e80f53f",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "71dc92e2a7713921",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 236.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "obsidian-livesync:Replicate": false,
+      "obsidian-livesync:Show log": false
+    }
+  },
+  "active": "caef4d8c3cfbff27",
+  "lastOpenFiles": [
+    "课程/计算机网络/2-物理层.md",
+    "Java.zip",
+    "Java/MyBatis/MyBatis.md",
+    "MySQL/基础/通用语句及分类.md",
+    "Pasted image 20230808154401.png",
+    "Pasted image 20230808154137.png",
+    "Pasted image 20230808154056.png",
+    "Pasted image 20230808153601.png",
+    "Pasted image 20230808153429.png",
+    "Pasted image 20230808125330.png",
+    "Pasted image 20230808153333.png",
+    "Pasted image 20230808152634.png",
+    "Pasted image 20230808131526.png",
+    "Pasted image 20230808153344.png",
+    "项目/个人网盘/NetDisk.md",
+    "未命名.canvas",
+    "Excalidraw/Drawing 2023-08-12 18.54.12.excalidraw.md",
+    "项目/个人博客/个人博客.md",
+    "项目/个人网盘",
+    "test.md",
+    "Excalidraw/Drawing 2023-08-12 16.08.25.excalidraw.md",
+    "Excalidraw",
+    "MySQL/基础/常用.md",
+    "MySQL/基础/img",
+    "Java/Utils/Alibaba Cloud Toolkit/重启脚本.md",
+    "Java/Utils/Alibaba Cloud Toolkit/启动脚本.md",
+    "Java/java项目的部署.md",
+    "兴趣小组/ESP32/简介.md",
+    "Java/Utils/Git/Git.md",
+    "兴趣小组/ESP32/配置开发环境.md",
+    "兴趣小组/ESP32/点亮LED灯.md",
+    "兴趣小组/ESP32/PWM呼吸灯.md",
+    "兴趣小组/ESP32/RGB灯.md",
+    "兴趣小组/ESP32/连接WiFi.md",
+    "兴趣小组/ESP32/PC远程控制LED灯.md",
+    "物联网/ESP32/ESP32.md",
+    "Python/Python编程/Python基础/list和tuple.md",
+    "Python/Python编程/Python基础/基础数据类型.md",
+    "兴趣小组/ESP32/img",
+    "Redis/基础/基础.md",
+    "兴趣小组/ESP32",
+    "Go/基础/Go基础.md",
+    "Go/Xorm/Xorm.md",
+    "兴趣小组/Python",
+    "兴趣小组"
+  ]
+}

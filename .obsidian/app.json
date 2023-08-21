@@ -1,0 +1,20 @@
+{
+  "focusNewTab": false,
+  "foldHeading": false,
+  "foldIndent": false,
+  "showIndentGuide": false,
+  "spellcheck": false,
+  "promptDelete": false,
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./img",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

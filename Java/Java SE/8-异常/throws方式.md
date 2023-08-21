@@ -1,0 +1,20 @@
+# throws方式
+# 使用方法：
+throws+异常类型
+
+throws为抛出异常，将异常抛给上一级（谁调用它就将异常抛给谁）
+
+1、“throws+异常类型”写在方法的声明处。指明此方法执行时，可能会抛出的异常类型
+
+一旦当方法体执行时，出现异常，仍会在异常代码处生成一个异常类的对象，此对象满足throws后异常
+
+类型时，就会被抛出。异常代码后续的代码就不再执行
+
+2、体会：try-catch-finally：真正的将异常处理掉了。
+
+​		throws的方式只是将异常抛给了方法的调用者，并没有真正处理掉
+
+![image-20220719102833451](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220719102833451.png)
+
+
+
