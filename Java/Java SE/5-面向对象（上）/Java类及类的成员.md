@@ -111,7 +111,7 @@ public void eat(){
 
 类中方法的调用和使用：
 
-![image-20220719102545405](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220719102545405.png)
+![image-20230908172608760](Java%E7%B1%BB%E5%8F%8A%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98.assets/image-20230908172608760.png)
 
 方法的声明：
 
@@ -313,7 +313,7 @@ public class 日历 {
 
 运行结果：
 
-![image-20220719102558638](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220719102558638.png)
+![image-20230908172646315](Java%E7%B1%BB%E5%8F%8A%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98.assets/image-20230908172646315.png)
 
 ```java
 LocalDate newYearsEve=LocalDate.of(1999,12,31);

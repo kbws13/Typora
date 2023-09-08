@@ -13,5 +13,5 @@
 
 单例模式优点：由于单例模式只生成一个实例，减少了系统性能的开销，当一个对象需要比较多的系统资源时，如读取配置、产生其他依赖对象时，则可以通过在应用启动时直接产生一个单例对象，然后永久驻留内存的方式来解决。
 
-![image-20220719102652534](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220719102652534.png)
+![image-20220719102652534](%E5%8D%95%E4%BE%8B%EF%BC%88Singleton%EF%BC%89%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.assets/image-20220719102652534.png)
 

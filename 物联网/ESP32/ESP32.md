@@ -295,5 +295,191 @@ def led_off():
 
 
 
+MQTT
 
+```
+from machine import Pin
+from machine import Timer
+import time
+import network
+from umqtt.simple import MQTTClient
+
+
+ssid="Redmi K40"
+password="123456789"
+
+
+def wifi_connect():
+    wlan=network.WLAN(network.STA_IF)
+    wlan.active(True)
+    start_time=time.time()
+    
+    if not wlan.isconnected():
+        print("connecting to network...")
+        wlan.connect(ssid,password)
+        
+        while not wlan.isconnected():
+            if time.time()-start_time>15:
+                print("timeout!")
+                break
+            return False
+    else:
+        print("network information:", wlan.ifconfig())
+        return True
+    
+def mqtt_send(tim):
+    client.publish(TOPIC, "Hello, World")
+
+    
+if __name__=="__main__":
+    if wifi_connect():
+        server="kbws.xyz"
+        port=1883
+        CLIENT_ID="ESP32"
+        TOPIC="/public/esp32/1"
+        client = MQTTClient(CLIENT_ID, server, port)
+        client.connect()
+        
+        tim=Timer(0)
+        tim.init(period=1000, mode=Timer.PERIODIC, callback=mqtt_send)
+
+
+```
+
+发布者
+
+```
+from machine import Pin
+from machine import Timer
+import json
+import time
+import network
+from umqtt.simple import MQTTClient
+import LED
+
+
+ssid="Redmi K40"
+password="123456789"
+
+
+def wifi_connect():
+    wlan=network.WLAN(network.STA_IF)
+    wlan.active(True)
+    start_time=time.time()
+    
+    if not wlan.isconnected():
+        print("connecting to network...")
+        wlan.connect(ssid,password)
+        
+        while not wlan.isconnected():
+            if time.time()-start_time>15:
+                print("timeout!")
+                break;
+        return False
+    else:
+        print("network information:", wlan.ifconfig())
+        return True
+    
+def mqtt_send(tim):
+    client.publish(TOPIC, "Hello,Everyone")
+    
+
+    
+if __name__=="__main__":
+    if wifi_connect():
+        server="kbws.xyz"
+        port=1883
+        CLIENT_ID="ESP32"
+        TOPIC="django/mqtt"
+        client = MQTTClient(CLIENT_ID, server, port)
+        
+        client.connect()
+        
+        tim=Timer(0)
+        tim.init(period=1000, mode=Timer.PERIODIC, callback=mqtt_send)
+
+
+
+
+```
+
+订阅者
+
+```
+from machine import Pin
+from machine import Timer
+import json
+import time
+import network
+from umqtt.simple import MQTTClient
+import LED
+
+
+ssid="Redmi K40"
+password="123456789"
+
+#ssid="360WiFi-C57556"
+#password="kk15530433000@"
+
+pin18 = Pin(18, Pin.OUT)
+
+def wifi_connect():
+    wlan=network.WLAN(network.STA_IF)
+    wlan.active(True)
+    start_time=time.time()
+    
+    if not wlan.isconnected():
+        print("connecting to network...")
+        wlan.connect(ssid,password)
+        
+        while not wlan.isconnected():
+            if time.time()-start_time>15:
+                print("timeout!")
+                break;
+            pin18.value(0)
+            return False
+    else:
+        print("network information:", wlan.ifconfig())
+        pin18.value(1)
+        return True
+    
+def mqtt_callback(topic,msg):
+    data = json.loads(str(msg.decode()))
+    if 'msg' in data:
+        if data['msg'] == True:
+            on_off = LED.led_on()
+            status = {
+                'status': on_off    
+            }
+            client.publish(TOPIC, json.dumps(status))
+        elif data['msg'] == False:
+            on_off = LED.led_off()
+            status = {
+                'status': on_off    
+            }
+            client.publish(TOPIC, json.dumps(status))
+    
+    
+def mqtt_rev(tim):
+    client.check_msg()
+    
+    
+if __name__=="__main__":
+    if wifi_connect():
+        server="kbws.xyz"
+        port=1883
+        CLIENT_ID="ESP32"
+        TOPIC="django/mqtt"
+        client = MQTTClient(CLIENT_ID, server, port)
+        client.set_callback(mqtt_callback)
+        
+        client.connect()
+        client.subscribe(TOPIC)
+        
+        tim=Timer(0)
+        tim.init(period=1000, mode=Timer.PERIODIC, callback=mqtt_rev)
+
+
+
+```
 

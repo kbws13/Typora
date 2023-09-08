@@ -9,5 +9,5 @@
 
 5、同一个包下，不能命名同一个接口或类（不同包下可以重名）
 
-![image-20220719102609339](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220719102609339.png)
+![image-20230908172554318](%E5%85%B3%E9%94%AE%E5%AD%97package.assets/image-20230908172554318.png)
 

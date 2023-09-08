@@ -1,8 +1,8 @@
 # 包装类（Wrapper）的使用
 
-![image-20220719102743376](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220719102743376.png)
+![image-20220719102743376](%E5%8C%85%E8%A3%85%E7%B1%BB%EF%BC%88Wrapper%EF%BC%89%E7%9A%84%E4%BD%BF%E7%94%A8.assets/image-20220719102743376.png)
 
-![image-20220719102746544](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220719102746544.png)
+![image-20220719102746544](%E5%8C%85%E8%A3%85%E7%B1%BB%EF%BC%88Wrapper%EF%BC%89%E7%9A%84%E4%BD%BF%E7%94%A8.assets/image-20220719102746544.png)
 
 1、Java提供了8种基本数据类型对应的包装类，使得基本数据类型的变量具有类的特征
 

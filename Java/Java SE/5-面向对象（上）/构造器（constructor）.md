@@ -33,5 +33,5 @@ JavaBean：一种Java语言写成的可重用组件
 2. 有一个无参的公共的构造器
 3. 有属性，且有对应的get、set方法
 
-![image-20220719102626974](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220719102626974.png)
+![image-20230908172538903](%E6%9E%84%E9%80%A0%E5%99%A8%EF%BC%88constructor%EF%BC%89.assets/image-20230908172538903.png)
 
