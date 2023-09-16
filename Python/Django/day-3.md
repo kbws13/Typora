@@ -41,11 +41,10 @@ STATICFILES_DIRS = (
 
 3. 样例：`<img src="{% static 'images/lena.jpg' %}">`
 
-    ![image-20220914213717347](C:/Users/XYDN/AppData/Roaming/Typora/typora-user-images/image-20220914213717347.png)
 
 当这里发生修改时
 
-![image-20220914213819460](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220914213819460.png)
+![image-20220914213819460](day-3.assets/image-20220914213819460.png)
 
 前两种方法都会失效，只有第三种方法仍然有效
 
@@ -140,7 +139,7 @@ ORM（Object Relational Mapping）即对象关系映射，它是一种程序技�
 
 ### 映射图
 
-![image-20220909150851453](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220909150851453.png)
+![image-20220909150851453](day-3.assets/image-20220909150851453.png)
 
 ### 模型示例
 
@@ -154,7 +153,7 @@ python manage.py startapp bookstore
 
 #### 添加模型类并注册app
 
-![image-20220909153201665](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220909153201665.png)
+![image-20220909153201665](day-3.assets/image-20220909153201665.png)
 
 模型类代码示例
 
@@ -364,11 +363,11 @@ class Book(models.Model):
 
 ### 修改模型类
 
-![image-20220909173633842](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220909173633842.png)
+![image-20220909173633842](day-3.assets/image-20220909173633842.png)
 
-![image-20220909173930096](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220909173930096.png)
+![image-20220909173930096](day-3.assets/image-20220909173930096.png)
 
-![image-20220909174000261](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220909174000261.png)
+![image-20220909174000261](day-3.assets/image-20220909174000261.png)
 
 
 
@@ -380,7 +379,7 @@ class Book(models.Model):
 
 执行`python3 manage.py makemigrations`出现如下迁移错误时的处理方法
 
-![image-20220909174725136](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220909174725136.png)
+![image-20220909174725136](day-3.assets/image-20220909174725136.png)
 
 #### 原因
 
@@ -478,8 +477,8 @@ obj.save()
 
 `python3 manage.py shell`
 
-![image-20220914200741059](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220914200741059.png)
+![image-20220914200741059](day-3.assets/image-20220914200741059.png)
 
 mysql中的数据表
 
-![image-20220914200828039](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220914200828039.png)
+![image-20220914200828039](day-3.assets/image-20220914200828039.png)

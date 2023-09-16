@@ -32,7 +32,7 @@ for book in books:
     print("书名",book.title,'出版社：',book.pub)
 ```
 
-![image-20220918092010508](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220918092010508.png)
+![image-20220918092010508](day-4.assets/image-20220918092010508.png)
 
 ### values('列1','列2'...)
 
@@ -52,7 +52,7 @@ for book in books:
 
 会将查询出来的数据封装到元组中，在封装到查询集合QuerySet中
 
-![image-20220918094254858](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220918094254858.png)
+![image-20220918094254858](day-4.assets/image-20220918094254858.png)
 
 ### order_by()
 
@@ -61,8 +61,6 @@ for book in books:
 作用：与all()方法不同，它会用SQL语句的ORDER BY子句对查询结果进行根据某个字段选择性的进行排序
 
 说明：默认是按照升序排序，降序排序需要在列前增加 ' - ' 表示
-
-![image-20220918094943619](C:/Users/XYDN/AppData/Roaming/Typora/typora-user-images/image-20220918094943619.png)
 
 ### filter(条件)
 
@@ -76,7 +74,7 @@ for book in books:
 
 例子
 
-![image-20220918101754959](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220918101754959.png)
+![image-20220918101754959](day-4.assets/image-20220918101754959.png)
 
 ### exclude(条件)
 
@@ -86,7 +84,7 @@ for book in books:
 
 例子：
 
-![image-20220918103045888](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220918103045888.png)
+![image-20220918103045888](day-4.assets/image-20220918103045888.png)
 
 ### get(条件)
 

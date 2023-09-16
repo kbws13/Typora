@@ -8,11 +8,11 @@
 
 响应是服务器端接收到请求后做响应的处理后再回复给浏览器端的数据
 
-![image-20220901163117016](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901163117016.png)
+![image-20220901163117016](day-2.assets/image-20220901163117016.png)
 
 ### 请求样例
 
-![image-20220901163201996](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901163201996.png)
+![image-20220901163201996](day-2.assets/image-20220901163201996.png)
 
 ### 请求中的方法
 
@@ -22,7 +22,7 @@ HTTP1.0定义了三种请求方法：GET、POST和HEAD方法（最常用）
 
 HTTP1.1新增了五种请求方法：OPTIONS, PUT, DELETE, TRACE和CONNECT方法
 
-![image-20220901163503763](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901163503763.png)
+![image-20220901163503763](day-2.assets/image-20220901163503763.png)
 
 ## Django中的请求
 
@@ -38,23 +38,23 @@ HTTP1.1新增了五种请求方法：OPTIONS, PUT, DELETE, TRACE和CONNECT方法
 - POST: QueryDict查询字典的对象，包含post请求的所有数据
 - FILES:类似于字典的对象，包含所有的上传文件信息
 
-![image-20220901165048555](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901165048555.png)
+![image-20220901165048555](day-2.assets/image-20220901165048555.png)
 
 ## 响应
 
 ### 响应样例
 
-![image-20220901165156927](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901165156927.png)
+![image-20220901165156927](day-2.assets/image-20220901165156927.png)
 
 ### 响应状态码
 
 下面是常见的响应状态码：
 
-![image-20220901165657615](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901165657615.png)
+![image-20220901165657615](day-2.assets/image-20220901165657615.png)
 
 HTTP状态码由三个十进制数字组成，第一个数字定义了状态码的类型，后两个数字没有分类的作用。HTTP状态码分为5种类型：
 
-![image-20220901165859593](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901165859593.png)
+![image-20220901165859593](day-2.assets/image-20220901165859593.png)
 
 ### Django中的响应对象
 
@@ -68,15 +68,15 @@ HttpReponse(content=响应体,content_type=响应体数据类型,status=状态�
 
 #### 参数
 
-![image-20220901170736153](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901170736153.png)
+![image-20220901170736153](day-2.assets/image-20220901170736153.png)
 
 #### 常用的Content-Type
 
-![image-20220901171140960](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901171140960.png)
+![image-20220901171140960](day-2.assets/image-20220901171140960.png)
 
 #### HttpResponse子类
 
-![image-20220901171317661](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901171317661.png)
+![image-20220901171317661](day-2.assets/image-20220901171317661.png)
 
 
 
@@ -92,7 +92,7 @@ HttpReponse(content=响应体,content_type=响应体数据类型,status=状态�
 
 样例
 
-![image-20220901173518983](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901173518983.png)
+![image-20220901173518983](day-2.assets/image-20220901173518983.png)
 
 ## GET处理
 
@@ -112,17 +112,17 @@ GET请求方式中，如果有数据需要传递给服务器，通常会用查�
 
 注意：不要传递敏感数据
 
-![image-20220901174302765](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901174302765.png)
+![image-20220901174302765](day-2.assets/image-20220901174302765.png)
 
 ## 方法示例
 
-![image-20220901174444021](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901174444021.png)
+![image-20220901174444021](day-2.assets/image-20220901174444021.png)
 
 当传递有相同参数名但多个的值的时候，使用`request.GET.getlist`
 
 ## 向前端传递参数
 
-![image-20220918110840097](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220918110840097.png)
+![image-20220918110840097](day-2.assets/image-20220918110840097.png)
 
 将查询到的数据封装，然后通过Django的json对象传递给参数
 
@@ -161,17 +161,17 @@ POST请求动作，一般用于向服务器提交大量/隐私数据
 
 客户端通过表单等POST请求将数据传递给服务器端，如：
 
-![image-20220901182526369](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901182526369.png)
+![image-20220901182526369](day-2.assets/image-20220901182526369.png)
 
 服务器端接收参数
 
 通过request.method来判断是否为POST请求，如：
 
-![image-20220901182626910](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901182626910.png)
+![image-20220901182626910](day-2.assets/image-20220901182626910.png)
 
 使用POST方式接收客户端数据
 
-![image-20220901182736421](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901182736421.png)
+![image-20220901182736421](day-2.assets/image-20220901182736421.png)
 
 ==注意：==要取消csrf验证，否则Django会拒绝客户端发送过来的POST请求，报403响应
 
@@ -179,7 +179,7 @@ POST请求动作，一般用于向服务器提交大量/隐私数据
 
 禁止掉settings.py中MIDDLWARE中的CsrfViewMiddleWare的中间件
 
-![image-20220902101130512](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902101130512.png)
+![image-20220902101130512](day-2.assets/image-20220902101130512.png)
 
 
 
@@ -201,7 +201,7 @@ MVC代表Model-View-Controller（模型-视图-控制器）模式
 
 作用：降低模块之间的耦合度（解耦）
 
-![image-20220902104714307](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902104714307.png)
+![image-20220902104714307](day-2.assets/image-20220902104714307.png)
 
 ### MTV
 
@@ -213,7 +213,7 @@ MTV代表Model-Template-View（模型-模板-视图）模式
 
 作用：降低模块之间的耦合度（解耦）
 
-![image-20220902105109962](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902105109962.png)
+![image-20220902105109962](day-2.assets/image-20220902105109962.png)
 
 ## 模板层
 
@@ -242,9 +242,9 @@ MTV代表Model-Template-View（模型-模板-视图）模式
 
 注意：template文件夹要与项目同名的文件夹同级
 
-![image-20220902112233583](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902112233583.png)
+![image-20220902112233583](day-2.assets/image-20220902112233583.png)
 
-![image-20220902112341810](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902112341810.png)
+![image-20220902112341810](day-2.assets/image-20220902112341810.png)
 
 ### 模板的加载方式
 
@@ -254,7 +254,7 @@ MTV代表Model-Template-View（模型-模板-视图）模式
 
 在视图函数中
 
-![image-20220902112556611](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902112556611.png)
+![image-20220902112556611](day-2.assets/image-20220902112556611.png)
 
 views：
 
@@ -278,7 +278,7 @@ path('test_html',views.test_html)
 
 在视图函数中
 
-![image-20220902134315004](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902134315004.png)
+![image-20220902134315004](day-2.assets/image-20220902134315004.png)
 
 ### 视图层与模板层之间的交互
 
@@ -301,9 +301,9 @@ def xxx_view(request):
 
 模板中，我们可以用`{{变量名}}`的语法调用视图传进来的变量
 
-![image-20220902191728627](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902191728627.png)
+![image-20220902191728627](day-2.assets/image-20220902191728627.png)
 
-![image-20220902191740787](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902191740787.png)
+![image-20220902191740787](day-2.assets/image-20220902191740787.png)
 
 
 
@@ -315,11 +315,11 @@ def xxx_view(request):
 
 ## 模板层-变量
 
-![image-20220902192108299](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902192108299.png)
+![image-20220902192108299](day-2.assets/image-20220902192108299.png)
 
 ### 能传递到模板中数据类型
 
-![image-20220902192411471](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902192411471.png)
+![image-20220902192411471](day-2.assets/image-20220902192411471.png)
 
 ### 在模板中使用变量语法
 
@@ -331,9 +331,9 @@ def xxx_view(request):
 {{ 函数名}}
 ```
 
-![image-20220902193206124](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902193206124.png)
+![image-20220902193206124](day-2.assets/image-20220902193206124.png)
 
-![image-20220902193224469](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902193224469.png)
+![image-20220902193224469](day-2.assets/image-20220902193224469.png)
 
 ## 模板层-标签
 
@@ -370,13 +370,13 @@ def xxx_view(request):
 1. if条件表达式里可以用的运算符 ==，!=，<，>，<=，>=，in，not in，is，is not，not，and，or
 2. 在if标记中使用实际括号是无效的语法。如果需要它们指示优先级，则应使用嵌套的if标记
 
-![image-20220902194604522](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902194604522.png)
+![image-20220902194604522](day-2.assets/image-20220902194604522.png)
 
-![image-20220902195356571](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902195356571.png)
+![image-20220902195356571](day-2.assets/image-20220902195356571.png)
 
 python中有一个local方法，可以把上一次提交的数据返回回去，相当于返回上面的dic
 
-![image-20220902200827760](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902200827760.png)
+![image-20220902200827760](day-2.assets/image-20220902200827760.png)
 
 记录此时的状态
 
@@ -394,7 +394,7 @@ python中有一个local方法，可以把上一次提交的数据返回回去，
 
 #### 内置变量
 
-![image-20220902212113234](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220902212113234.png)
+![image-20220902212113234](day-2.assets/image-20220902212113234.png)
 
 
 
@@ -422,11 +422,11 @@ python中有一个local方法，可以把上一次提交的数据返回回去，
 
 ### 常用过滤器
 
-![image-20220903104841786](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220903104841786.png)
+![image-20220903104841786](day-2.assets/image-20220903104841786.png)
 
 ### 例子
 
-![image-20220903105306795](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220903105306795.png)
+![image-20220903105306795](day-2.assets/image-20220903105306795.png)
 
 ## 继承
 
@@ -538,11 +538,11 @@ url反向解析是指在函数或模板中，用path定义的名称来==动态�
 
 #### urls.py
 
-![image-20220903173030374](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220903173030374.png)
+![image-20220903173030374](day-2.assets/image-20220903173030374.png)
 
 #### test_url.html
 
-![image-20220903173127378](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220903173127378.png)
+![image-20220903173127378](day-2.assets/image-20220903173127378.png)
 
 ### 视图函数中
 

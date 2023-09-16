@@ -82,7 +82,7 @@ python manage.py startapp ying'y
 
 展开mysite1项目，结构如下：
 
-![image-20220831124011164](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220831124011164.png)
+![image-20220831124011164](day-1.assets/image-20220831124011164.png)
 
 manager.py包含项目管理的所有子命令，如：
 
@@ -105,7 +105,7 @@ manager.py包含项目管理的所有子命令，如：
 - 配置项格式例：`BASE_DIR = 'XXXX'`
 - 公有配置-Django官方提供的公有配置
 
-![image-20220831131442719](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220831131442719.png)
+![image-20220831131442719](day-1.assets/image-20220831131442719.png)
 
 DEBUG是项目的启动模式：
 
@@ -117,7 +117,7 @@ False：上线模式
 
 报错页面
 
-![image-20220831161732223](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220831161732223-16619338526011.png)
+![image-20220831161732223](day-1.assets/image-20220831161732223-16619338526011.png)
 
 ALLOWED_HOSTS
 
@@ -228,7 +228,7 @@ URL的一般语法为（注[ ]中内容可省略）
 
 主路由-urls.py样例：
 
-![image-20220831183000938](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220831183000938.png)
+![image-20220831183000938](day-1.assets/image-20220831183000938.png)
 
 ## 视图函数
 
@@ -252,11 +252,11 @@ def page1_view(request):
     return HttpRespon()
 ```
 
-![image-20220831191422030](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220831191422030.png)
+![image-20220831191422030](day-1.assets/image-20220831191422030.png)
 
-![image-20220831191437457](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220831191437457.png)
+![image-20220831191437457](day-1.assets/image-20220831191437457.png)
 
-![image-20220908202536330](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220908202536330.png)
+![image-20220908202536330](day-1.assets/image-20220908202536330.png)
 
 # 路由配置
 
@@ -294,15 +294,15 @@ def page1_view(request):
 path('page/<int:page>',views.xxx)
 ```
 
-![image-20220831212847057](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220831212847057.png)
+![image-20220831212847057](day-1.assets/image-20220831212847057.png)
 
 urls：
 
-![image-20220831213131585](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220831213131585.png)
+![image-20220831213131585](day-1.assets/image-20220831213131585.png)
 
 views：
 
-![image-20220831213147668](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220831213147668.png)
+![image-20220831213147668](day-1.assets/image-20220831213147668.png)
 
 l
 
@@ -322,11 +322,11 @@ l
 
 urls：
 
-![image-20220901100319932](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901100319932.png)
+![image-20220901100319932](day-1.assets/image-20220901100319932.png)
 
 views：
 
-![image-20220901100337464](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901100337464.png)
+![image-20220901100337464](day-1.assets/image-20220901100337464.png)
 
 ### re_path( )函数
 
@@ -342,7 +342,7 @@ re_path(reg,view,name=xxx)
 
 #### 样例
 
-![image-20220901162342938](https://gitee.com/Enteral/images/raw/master/https://gitee.com/enteral/images/image-20220901162342938.png)
+![image-20220901162342938](day-1.assets/image-20220901162342938.png)
 
 
 
