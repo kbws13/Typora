@@ -11,7 +11,6 @@ for i in range(3):
 	d['id'] = i
 	l.append(d)
 print(l)
-123456
 ```
 
 上述代码，我们的预期输出是:
