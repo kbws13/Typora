@@ -113,7 +113,3 @@ server {
 > 5. 修改Nginx配置文件使其监听指定端口
 > 6. 查看项目同级目录下的**nohup.out**文件的输出日志
 
-
-
-mindmap-plugin: basic
-
