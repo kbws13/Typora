@@ -1,39 +1,16 @@
-# 一、安装mysql(如已安装可跳过), [参考链接](https://blog.csdn.net/m0_63228448/article/details/121739771)
+# 一、安装mysql
 
 ```
 # 1.更新数据源
 sudo apt-get update
 # 2.安装mysql服务
 sudo apt-get install -y  mysql-server
-# 3.进行初始化配置
-sudo mysql_secure_installation
-
-# 第一步: 是否使用强密码, y使用其他键不使用
-# 第二步: 设置密码(如发生错误往下看)
-# 第三步: 是否删除默认的匿名用户,可以不删除
-# 第四步: 是否禁用远程root访问, 可以不禁用
-# 第五步: 是否删除测试数据库, 可以删除
-# 第六步: 是否刷新权限表, 可以刷新
-
-# 4.尝试登录mysql, xxxxxx处填自己设置的密码
-sudo mysql -uroot -pxxxxxx
-```
-
-> 在上面的第二步MYSQL设置密码时显示，Failed! Error: SET PASSWORD has no significance for user ‘root‘@‘localhost‘ as the authe
->
-> 出现这种问题使用下述方法解决，[参考链接](https://blog.csdn.net/weixin_42189863/article/details/125113978)
-
-```
-# 1.打开一个新的终端
-
-# 2.打开mysql
+# 3.查看MySQL运行状态
+sudo systemctl status mysql
+# 4.连接MySQL
 sudo mysql
-
-# 3.手动修改密码，xxxxx处输入新密码
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'xxxxx';
-
-# 4.重新进行配置
-sudo mysql_secure_installation
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '你的密码';
+FLUSH PRIVILEGES;
 ```
 
 > 安装后一般默认是启动的,可以通过下述的语句来实现服务的开启或关闭
@@ -50,13 +27,7 @@ sudo mysql_secure_installation
 
 > **远程访问：**
 >
-> mysql默认启动3306端口, 若使用云服务器应开放3306端口
->
-> 同时修改配置文件 /etc/mysql/mysql.conf.d/mysqld.cnf 中的
->
-> ​	bind-address =  0.0.0.0
->
-> 这一操作可以让mysql服务跑在网络上，然后登录mysql
+> https://www.myfreax.com/mysql-remote-access/
 
 # 二、安装java并运行
 
