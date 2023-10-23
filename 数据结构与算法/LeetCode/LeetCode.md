@@ -912,6 +912,19 @@ class Solution {
 }
 ```
 
+## 动态口令
+
+```java
+class Solution {
+    public String dynamicPassword(String password, int target) {
+        String res = "";
+        for(int i = target; i < target + password.length(); i++)
+            res += password.charAt(i % password.length());
+        return res;
+    }
+}
+```
+
 
 
 
