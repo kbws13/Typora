@@ -1004,38 +1004,49 @@ class Solution {
 
 
 
-# 双指针法
+# 栈与队列
 
-## 移除元素
+## 用栈实现队列
 
 ```java
-class Solution {
-    public int removeElement(int[] nums, int val) {
-        int slow = 0;
-        for(int fast=0;fast < nums.length;fast++) {
-            if(nums[fast] != val) {
-                nums[slow] = nums[fast];
-                slow++;
-            }
-        }
-        return slow;
+class MyQueue {
+
+    Stack<Integer> stackIn;
+    Stack<Integer> stackOut;
+
+    /** Initialize your data structure here. */
+    public MyQueue() {
+        stackIn = new Stack<>(); // 负责进栈
+        stackOut = new Stack<>(); // 负责出栈
     }
-}
-```
+    
+    /** Push element x to the back of queue. */
+    public void push(int x) {
+        stackIn.push(x);
+    }
+    
+    /** Removes the element from in front of queue and returns that element. */
+    public int pop() {    
+        dumpstackIn();
+        return stackOut.pop();
+    }
+    
+    /** Get the front element. */
+    public int peek() {
+        dumpstackIn();
+        return stackOut.peek();
+    }
+    
+    /** Returns whether the queue is empty. */
+    public boolean empty() {
+        return stackIn.isEmpty() && stackOut.isEmpty();
+    }
 
-## 反转字符串
-
-```java
-class Solution {
-    public void reverseString(char[] s) {
-        int l=0;
-        int r=s.length-1;
-        while(l<r){
-            char temp = s[l];
-            s[l] = s[r];
-            s[r] = temp;
-            l++;
-            r--;
+    // 如果stackOut为空，那么将stackIn中的元素全部放到stackOut中
+    private void dumpstackIn(){
+        if (!stackOut.isEmpty()) return; 
+        while (!stackIn.isEmpty()){
+                stackOut.push(stackIn.pop());
         }
     }
 }
