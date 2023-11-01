@@ -1121,7 +1121,57 @@ class Solution {
 }
 ```
 
+## 删除字符串中的所有相邻重复项
 
+循环+队列
+
+```java
+class Solution {
+    public String removeDuplicates(String s) {
+        ArrayDeque<Character> deque = new ArrayDeque<>();
+        char ch;
+        for(int i=0;i<s.length();i++) {
+            ch = s.charAt(i);
+            if(deque.isEmpty() || deque.peek()!=ch){
+                deque.push(ch);
+            }else{
+                deque.pop();
+            }
+        }
+        String str = "";
+        while(!deque.isEmpty()) {
+            str = deque.pop() + str;
+        }
+        return str;
+    }
+}
+```
+
+
+
+双指针
+
+```java
+class Solution {
+    public String removeDuplicates(String s) {
+        char[] ch = s.toCharArray();
+        int fast = 0;
+        int slow = 0;
+        while(fast < s.length()){
+            // 直接用fast指针覆盖slow指针的值
+            ch[slow] = ch[fast];
+            // 遇到前后相同值的，就跳过，即slow指针后退一步，下次循环就可以直接被覆盖掉了
+            if(slow > 0 && ch[slow] == ch[slow - 1]){
+                slow--;
+            }else{
+                slow++;
+            }
+            fast++;
+        }
+        return new String(ch,0,slow);
+    }
+}
+```
 
 
 
