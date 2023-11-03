@@ -1199,6 +1199,51 @@ class Solution {
 }
 ```
 
+## 滑动窗口最大值
+
+```java
+class Solution {
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        if(nums.length == 1){
+            return nums;
+        }
+        int len = nums.length - k + 1;
+        int[] res = new int[len];
+        int num = 0;
+        MyQueue myQueue = new MyQueue();
+        for(int i=0;i<k;i++) {
+            myQueue.add(nums[i]);
+        }
+        res[num++] = myQueue.peek();
+        for(int i=k;i<nums.length;i++) {
+            myQueue.poll(nums[i-k]);
+            myQueue.add(nums[i]);
+            res[num++] = myQueue.peek();
+        }
+        return res;
+    }
+}
+class MyQueue{
+    Deque<Integer> deque = new LinkedList<>();
+    void poll(int val){
+        if(!deque.isEmpty() && deque.peek()==val) {
+            deque.poll();
+        }
+    }
+
+    void add(int val) {
+        while(!deque.isEmpty() && val > deque.getLast()){
+            deque.removeLast();
+        }
+        deque.add(val);
+    }
+
+    int peek(){
+        return deque.peek();
+    }
+}
+```
+
 
 
 
