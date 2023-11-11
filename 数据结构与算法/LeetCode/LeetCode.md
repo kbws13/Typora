@@ -1460,9 +1460,9 @@ class Solution {
 
 
 
+## 二叉树的层序遍历
 
-
-## 层序遍历
+### 层序遍历
 
 ```java
 class Solution {
@@ -1493,7 +1493,7 @@ class Solution {
 }
 ```
 
-## 层序遍历Ⅱ
+### 层序遍历Ⅱ
 
 ```java
 class Solution {
@@ -1534,7 +1534,7 @@ class Solution {
 }
 ```
 
-## 二叉树的右视图
+### 二叉树的右视图
 
 ```java
 /**
@@ -1576,6 +1576,54 @@ class Solution {
                     list.add(poll.val);
                 }
             }
+        }
+        return list;
+    }
+}
+```
+
+### 二叉树的层平均值
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> list = new ArrayList<>();
+        Deque<TreeNode> que = new LinkedList<>();
+
+        if(root == null) {
+            return null;
+        }
+        que.offerLast(root);
+        while(!que.isEmpty()) {
+            int leveSize = que.size();
+            double sum = 0.0;
+            for(int i=0;i<leveSize;i++) {
+                TreeNode poll = que.pollFirst();
+
+                sum += poll.val;
+                if(poll.left!=null) {
+                    que.addLast(poll.left);
+                }
+                if(poll.right!=null) {
+                    que.addLast(poll.right);
+                }
+            }
+            list.add(sum / leveSize);
         }
         return list;
     }
