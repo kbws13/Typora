@@ -1689,7 +1689,7 @@ class Solution {
 }
 ```
 
-## 在每个树行中寻找最大值
+### 在每个树行中寻找最大值
 
 ```java
 class Solution {
@@ -1711,6 +1711,36 @@ class Solution {
             result.add(max);
         }
         return result;
+    }
+}
+```
+
+### 填充每个节点的下一个右侧结点指针
+
+```java
+class Solution {
+    public Node connect(Node root) {
+	Queue<Node> tmpQueue = new LinkedList<Node>();
+	if (root != null) tmpQueue.add(root);
+
+	while (tmpQueue.size() != 0){
+	    int size = tmpQueue.size();
+
+            Node cur = tmpQueue.poll();
+            if (cur.left != null) tmpQueue.add(cur.left);
+            if (cur.right != null) tmpQueue.add(cur.right);
+
+	    for (int index = 1; index < size; index++){
+		Node next = tmpQueue.poll();
+		if (next.left != null) tmpQueue.add(next.left);
+		if (next.right != null) tmpQueue.add(next.right);
+
+                cur.next = next;
+                cur = next;
+	    }
+	}
+
+        return root;
     }
 }
 ```
