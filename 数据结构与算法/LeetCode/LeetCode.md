@@ -1785,6 +1785,50 @@ class Solution {
 }
 ```
 
+## 二叉树的最小深度
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public int minDepth(TreeNode root) {
+        if(root == null) {
+            return 0;
+        }
+        Queue<TreeNode> que = new LinkedList<>();
+        que.offer(root);
+        int depth = 0;
+        while(!que.isEmpty()) {
+            int size = que.size();
+            depth++;
+            TreeNode cur = null;
+            for(int i=0;i<size;i++) {
+                cur = que.poll();
+                if(cur.left == null && cur.right == null){
+                    return depth;
+                }
+                if (cur.left != null) que.offer(cur.left);
+                if (cur.right != null) que.offer(cur.right);
+            }
+        }
+        return depth;
+    }
+}
+```
+
 
 
 
