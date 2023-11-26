@@ -2164,6 +2164,24 @@ class Solution {
 }
 ```
 
+## 路径总和
+
+### 递归
+
+```java
+class Solution {
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        if(root == null) return false;
+
+        // 判断叶子节点是否符合
+        if(root.left == null && root.right == null) return root.val == targetSum;
+
+        // 求两侧分支的路径和
+        return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val);
+    }
+}
+```
+
 
 
 
