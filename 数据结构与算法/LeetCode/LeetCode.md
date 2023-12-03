@@ -2373,6 +2373,94 @@ class Solution {
 }
 ```
 
+## 二叉搜索树中的众数
+
+### 递归
+
+```java
+class Solution {
+    ArrayList<Integer> resList;
+    int maxCount;
+    int count;
+    TreeNode pre;
+    public int[] findMode(TreeNode root) {
+        resList = new ArrayList<>();
+        maxCount = 0;
+        count = 0;
+        pre = null;
+        finNode1(root);
+        int[] res = new int[resList.size()];
+        for (int i = 0; i < resList.size(); i++) {
+            res[i] = resList.get(i);
+        }
+        return res;
+    }
+    public void finNode1(TreeNode root) {
+        if(root == null) return;
+        finNode1(root.left);
+
+        int rootValue = root.val;
+        // 计数
+        if(pre == null || rootValue != pre.val){
+            count = 1;
+        }else {
+            count++;
+        }
+        // 更新结果和maxCount
+        if(count > maxCount) {
+            resList.clear();
+            resList.add(rootValue);
+            maxCount = count;
+        }else if(count == maxCount){
+            resList.add(rootValue);
+        }
+        pre = root;
+
+        finNode1(root.right);
+    }
+}
+```
+
+### 迭代
+
+```java
+class Solution {
+    public int[] findMode(TreeNode root) {
+        TreeNode pre = null;
+        Stack<TreeNode> stack = new Stack<>();
+        List<Integer> result = new ArrayList<>();
+        int maxCount = 0;
+        int count = 0;
+        TreeNode cur = root;
+        while (cur != null || !stack.isEmpty()) {
+            if (cur != null) {
+                stack.push(cur);
+                cur =cur.left;
+            }else {
+                cur = stack.pop();
+                // 计数
+                if (pre == null || cur.val != pre.val) {
+                    count = 1;
+                }else {
+                    count++;
+                }
+                // 更新结果
+                if (count > maxCount) {
+                    maxCount = count;
+                    result.clear();
+                    result.add(cur.val);
+                }else if (count == maxCount) {
+                    result.add(cur.val);
+                }
+                pre = cur;
+                cur = cur.right;
+            }
+        }
+        return result.stream().mapToInt(Integer::intValue).toArray();
+    }
+}
+```
+
 
 
 
