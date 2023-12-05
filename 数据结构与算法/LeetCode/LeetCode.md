@@ -2461,6 +2461,36 @@ class Solution {
 }
 ```
 
+## 二叉树的最近公共祖先
+
+```java
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if(root == null || root == p || root == q){
+            return root;
+        }
+
+        // 后序遍历
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+
+        if(left == null && right == null) {
+            // 未找到节点p或者q
+            return null;
+        }else if(left == null && right != null) {
+            // 找到一个节点
+            return right;
+        }else if(left != null && right == null) {
+            // 找到一个节点
+            return left;
+        }else {
+            // 找到两个节点
+            return root;
+        }
+    }
+}
+```
+
 
 
 
