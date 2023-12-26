@@ -27,7 +27,15 @@ FLUSH PRIVILEGES;
 
 > **远程访问：**
 >
-> https://www.myfreax.com/mysql-remote-access/
+> **创建用户**
+>
+> 默认的 root 用户只能当前节点 localhost 访问，是无法远程访问的，需要创建一个 root 账户，用户远程访问
+>
+> `create user 'root'@'%' identified with mysql_native_password by '123456';`
+>
+> **给root用户分配权限**
+>
+> `grant all on *.* to 'root'@'%';`
 
 # 二、安装java并运行
 
