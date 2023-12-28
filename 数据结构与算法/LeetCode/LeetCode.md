@@ -8,6 +8,8 @@ authors: KBWS
 
 ## 二分查找
 
+[二分查找](https://leetcode.cn/problems/binary-search/)
+
 ```java
 class Solution {
     public int search(int[] nums, int target) {
@@ -2742,7 +2744,7 @@ class Solution {
 }
 ```
 
- 
+​     
 
 
 
