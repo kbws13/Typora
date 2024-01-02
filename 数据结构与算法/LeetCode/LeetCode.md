@@ -32,6 +32,8 @@ class Solution {
 
 ## 移除元素
 
+[移除元素](https://leetcode.cn/problems/remove-element/)
+
 ```java
 class Solution {
     public int removeElement(int[] nums, int val) {
