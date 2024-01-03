@@ -50,6 +50,8 @@ class Solution {
 
 ## 有序数组的平方
 
+[有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/)
+
 ```java
 class Solution {
     public int[] sortedSquares(int[] nums) {
