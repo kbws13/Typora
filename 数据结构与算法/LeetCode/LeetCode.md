@@ -75,6 +75,8 @@ class Solution {
 
 ## 长度最小的子数组
 
+[长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/)
+
 ```java
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
