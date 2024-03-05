@@ -256,3 +256,18 @@ server{
 ```
 
 这样只要访问localhost，Nginx就会将请求自动分配到8080和8081两端口
+
+# 查看日志
+
+**查看访问日志**
+
+```sh
+sudo cat /var/log/nginx/access.log
+```
+
+**查看报错日志**
+
+```sh
+sudo cat /var/log/nginx/error.log
+```
+

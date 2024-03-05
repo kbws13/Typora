@@ -1,6 +1,6 @@
 # 三、SpringMVC
 
-## 1、SpringMVC简介
+# 1、SpringMVC简介
 
 ### 1.1、什么是MVC
 
@@ -113,9 +113,7 @@ Spring版本：5.3.1
 
 此配置作用下，SpringMVC的配置文件默认位于WEB-INF下，默认名称为<servlet-name>-
 
-servlet.xml，例如，以下配置所对应SpringMVC的配置文件位于WEB-INF下，文件名为springMVC
-
-servlet.xml
+servlet.xml，例如，以下配置所对应SpringMVC的配置文件位于WEB-INF下，文件名为springMVC-servlet.xml
 
 ```xml
 <!-- 配置SpringMVC的前端控制器，对浏览器发送的请求统一进行处理 -->
@@ -323,7 +321,7 @@ public class RequestMappingController {
 }
 ```
 
-3.3、@RequestMapping注解的value属性
+## 3.3、@RequestMapping注解的value属性
 
 @RequestMapping注解的value属性通过请求的请求地址匹配请求映射
 
@@ -674,7 +672,7 @@ public String testMap(Map<String, Object> map){
 }
 ```
 
-5.5、使用ModelMap向request域对象共享数据
+## 5.5、使用ModelMap向request域对象共享数据
 
 ```java
 @RequestMapping("/testModelMap")
@@ -787,7 +785,7 @@ public String testRedirect(){
 
 ## 6.4、视图控制器view-controller
 
-当控制器方法中，仅仅用来实现页面跳转，即只需要设置视图名称时，可以将处理器方法使用view
+当控制器方法中，仅仅用来实现页面跳转，即只需要设置视图名称时，可以将处理器方法使用view-
 
 controller标签进行表示
 
@@ -2217,7 +2215,7 @@ HandlerExceptionResolver进行异常处理）选择一个适合的ViewResolver�
 
 # 四、SSM整合
 
-4.1、ContextLoaderListener
+## 4.1、ContextLoaderListener
 
 Spring提供了监听器ContextLoaderListener，实现ServletContextListener接口，可监听
 

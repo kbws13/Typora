@@ -65,7 +65,7 @@
 执行下面这段代码，创建Django应用
 
 ```shell
-python manage.py startapp ying'y
+python manage.py startapp 应用
 ```
 
 ## 常见问题
@@ -86,10 +86,10 @@ python manage.py startapp ying'y
 
 manager.py包含项目管理的所有子命令，如：
 
-- python3 manager.py runserver 启动服务
-- python3 manager.py startapp 创建应用
-- python3 manager.py migrate 数据库迁移
-- 直接执行python3 manager.py 可以列出所有的Django子命令
+- python3 manage.py runserver 启动服务
+- python3 manage.py startapp 创建应用
+- python3 manage.py migrate 数据库迁移
+- 直接执行python3 manage.py 可以列出所有的Django子命令
 
 ### 项目同名文件夹
 

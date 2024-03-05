@@ -1,9 +1,5 @@
 # Mybatis-Plus
 
-
-
-
-
 ## 创建Spring Boot项目
 
 ## 导入依赖
@@ -777,19 +773,11 @@ public void test2(){
 
 
 
-
-
 #### 乐观锁与悲观锁
 
 ![image-20230714210812058](Mybatis-plus.assets/image-20230714210812058.png)
 
-
-
-
-
 #### 模拟修改冲突
-
-
 
 
 
