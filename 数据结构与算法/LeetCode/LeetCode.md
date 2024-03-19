@@ -97,6 +97,8 @@ class Solution {
 
 ## 螺旋数组
 
+[螺旋矩阵](https://leetcode.cn/problems/spiral-matrix-ii/)
+
 ```java
 class Solution {
     public int[][] generateMatrix(int n) {
