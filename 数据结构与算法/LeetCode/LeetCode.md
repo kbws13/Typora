@@ -182,6 +182,8 @@ class Solution {
 
 ### 单链表
 
+[设计链表](https://leetcode.cn/problems/design-linked-list/)
+
 ```java
 class ListNode{
     int val;
