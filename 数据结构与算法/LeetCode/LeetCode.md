@@ -476,6 +476,8 @@ class Solution {
 
 ## 删除链表的倒数第N个节点
 
+[删除链表的倒数第N个节点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/description/)
+
 ```java
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
