@@ -502,6 +502,8 @@ class Solution {
 
 ## 链表相交
 
+[链表相交](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/)
+
 ```java
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
