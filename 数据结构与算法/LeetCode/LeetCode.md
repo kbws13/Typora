@@ -584,6 +584,8 @@ public class Solution {
 
 ## 有效的字母异位词
 
+[有效的字母异位词]()
+
 ```java
 class Solution {
     public boolean isAnagram(String s, String t) {
