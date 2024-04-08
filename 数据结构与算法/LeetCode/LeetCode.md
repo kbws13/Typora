@@ -610,6 +610,8 @@ class Solution {
 
 ## 两个数组的交集
 
+[两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/description/)
+
 ### 使用HashSet
 
 ```java
@@ -677,6 +679,8 @@ class Solution {
 
 ## 快乐数
 
+[快乐数](https://leetcode.cn/problems/happy-number/)
+
 ```java
 class Solution {
     public boolean isHappy(int n) {
@@ -701,6 +705,8 @@ class Solution {
 ```
 
 ## 两数之和
+
+[两数之和](https://leetcode.cn/problems/two-sum/description/)
 
 ```java
 class Solution {
