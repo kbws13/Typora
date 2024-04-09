@@ -732,6 +732,8 @@ class Solution {
 
 ## 四数相加
 
+[四数之和](https://leetcode.cn/problems/4sum-ii/)
+
 ```java
 class Solution {
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
