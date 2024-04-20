@@ -840,6 +840,8 @@ class Solution {
 
 ## 反转字符串
 
+[反转字符串](https://leetcode.cn/problems/reverse-string/description/)
+
 ```java
 class Solution {
     public void reverseString(char[] s) {
@@ -858,6 +860,8 @@ class Solution {
 
 ## 反转字符串II
 
+[反转字符串II](https://leetcode.cn/problems/reverse-string-ii/description/)
+
 ```java
 class Solution {
     public String reverseStr(String s, int k) {
@@ -867,7 +871,6 @@ class Solution {
             // 判断尾数够不够k个来取决end指针的位置
             int end = Math.min(ch.length - 1,start + k - 1);
             while(start < end){
-                
                 char temp = ch[start];
                 ch[start] = ch[end];
                 ch[end] = temp;
