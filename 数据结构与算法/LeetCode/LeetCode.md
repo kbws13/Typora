@@ -1019,6 +1019,8 @@ class Solution {
 
 ## 重复的子字符串
 
+[重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/description/)
+
 ```java
 class Solution {
     public boolean repeatedSubstringPattern(String s) {
