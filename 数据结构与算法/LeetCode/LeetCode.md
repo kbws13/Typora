@@ -1105,6 +1105,8 @@ class MyQueue {
 
 ## 用队列实现栈
 
+[用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/description/)
+
 ```java
 class MyStack {
 
