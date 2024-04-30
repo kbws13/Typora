@@ -1150,6 +1150,8 @@ class MyStack {
 
 ## 有效的括号
 
+[有效的括号](https://leetcode.cn/problems/valid-parentheses/description/)
+
 ```java
 class Solution {
     public boolean isValid(String s) {
