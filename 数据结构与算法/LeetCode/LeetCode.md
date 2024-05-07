@@ -1178,6 +1178,8 @@ class Solution {
 
 ## 删除字符串中的所有相邻重复项
 
+[删除字符串中所有相邻重复项](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/description/)
+
 循环+队列
 
 ```java
