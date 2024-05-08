@@ -1232,6 +1232,8 @@ class Solution {
 
 ## 逆波兰表达式求值
 
+[逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
+
 ```java
 class Solution {
     public int evalRPN(String[] tokens) {
