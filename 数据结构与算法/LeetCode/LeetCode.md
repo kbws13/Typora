@@ -1260,6 +1260,8 @@ class Solution {
 
 ## 滑动窗口最大值
 
+[滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/description/)
+
 ```java
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
