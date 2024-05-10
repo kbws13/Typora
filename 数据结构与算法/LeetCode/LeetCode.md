@@ -1309,6 +1309,8 @@ class MyQueue{
 
 ## 前 K 个高频元素
 
+[前K个高频元素](https://leetcode.cn/problems/top-k-frequent-elements/description/)
+
 ### 基于大顶堆实现
 
 ```java
