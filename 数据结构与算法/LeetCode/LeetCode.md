@@ -1472,6 +1472,8 @@ class Solution {
 
 ### 中序遍历
 
+[中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/description/)
+
 ```java
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
