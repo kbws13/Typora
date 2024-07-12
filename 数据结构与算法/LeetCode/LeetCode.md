@@ -1502,6 +1502,8 @@ class Solution {
 
 ### 后序遍历
 
+[后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/description/)
+
 ```java
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
