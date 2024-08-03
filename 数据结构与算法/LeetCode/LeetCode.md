@@ -1661,6 +1661,8 @@ class Solution {
 
 ### 二叉树的层平均值
 
+[二叉树的层平均值](https://leetcode.cn/problems/average-of-levels-in-binary-tree/)
+
 ```java
 /**
  * Definition for a binary tree node.
