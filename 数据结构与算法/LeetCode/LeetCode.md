@@ -1711,6 +1711,8 @@ class Solution {
 
 ### N叉树的层序遍历
 
+[N叉树的层序遍历](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/)
+
 ```java
 /*
 // Definition for a Node.
