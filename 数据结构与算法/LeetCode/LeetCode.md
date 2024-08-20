@@ -1772,6 +1772,8 @@ class Solution {
 
 ### 在每个树行中寻找最大值
 
+[在每个树行这寻找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row)
+
 ```java
 class Solution {
     public List<Integer> largestValues(TreeNode root) {
