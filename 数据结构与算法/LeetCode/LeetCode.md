@@ -2736,6 +2736,8 @@ class Solution {
 
 ## 组合
 
+[组合](https://leetcode.cn/problems/combinations/)
+
 ```java
 class Solution {
     List<List<Integer>> result = new ArrayList<>();
